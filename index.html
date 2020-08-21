@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="footer, address, phone, icons" />
+<link rel="stylesheet" href="event.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Feedback_Form</title>
+
+  
+ 
+    
+    <style>
+        
+        .container {
+            border:2px solid black;
+        }
+    
+        </style>
+        </head>
+        <body>
+
+          <div class="container" style="margin-bottom: 50px;margin-top: 50px;" >
+              <div class="row"  style=" border-bottom:2px solid black;">
+                  <h3 style="padding-left: 250px;">STUDENT FEEDBACK FORM (2019-2020)</h3>
+              </div>
+              <form action="feedback_form_to_db.php" method="POST">
+              <div class="row" style=" border-bottom:2px solid black;">
+                 <div class="col"style=" border-right:2px solid black;">Department<select name="department">
+                     <option >Select Department</option>
+                     <option value="CSE">CSE</option>
+                     <option value="ECE">ECE</option>
+                     <option value="MECH">MECH</option>
+                     <option value="EE">EE</option>
+                     <option value="CIVIL">CIVIL</option>
+                     <option value="MSME">MSME</option>
+                  </select></div>
+                 <div class="col" style=" border-right:2px solid black;">Course<select name="course">
+                    <option >Select Course</option>
+                    <option value="BTECH">BTECH</option>
+                    <option value="MTECH">MTECH</option>
+                    <option value="PHD">PHD</option>
+                 </select></div>
+                 <div class="col">Semester<select name="semester">
+                    <option >Select Semester</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>             
+                 </select></div>
+              </div>
+              <div class="row"  style=" border-bottom:2px solid black;">
+                <div class="col" style=" border-right:2px solid black;">Subject Name<select name="subject">
+                    <option >Select Subject</option>
+                    <option value="TOC">TOC</option>
+                    <option value="CA">CA</option>
+                    <option value="SE">SE</option>
+                    <option value="PQT">PQT</option>
+                    <option value="ADA">ADA</option>
+                    <option value="DBMS">DBMS</option>
+                 </select></div>
+                <div class="col">Faculty<select name="faculty">
+                   <option >Select Faculty</option>
+                   <option value="Nilay Khare">Nilay Khare</option>
+                   <option value="Jaytrilok Chaudhary">Jaytrilok Chaudhary</option>
+                   <option value="Shweta Jain">Shweta Jain</option>
+                   <option value="Gagan Vishwakarma">Gagan Vishwakarma</option>
+                   <option value="Vijay Bhaskar">Vijay Bhaskar</option>
+                   <option value="Manish Pandey">Manish Pandey</option>
+                </select></div>
+                
+             </div>
+              <table style="border-bottom: 2px solid black;" class="table">
+                  <tr>
+                      <td>Sno.</td>
+                      <td>Parameter</td>
+                      <td>5</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>2</td>
+                      <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Ability to explain concept and principle of subject</td>
+                    <td><input type="radio" name="1" value="5" > </td>
+                    <td><input type="radio" name="1" value="4" > </td>
+                    <td><input type="radio" name="1" value="3" > </td>
+                    <td><input type="radio" name="1" value="2" > </td>
+                    <td><input type="radio" name="1" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Knowledge expertise and confidence of teacher in teaching</td>
+                    <td><input type="radio" name="2" value="5" > </td>
+                    <td><input type="radio" name="2" value="4" > </td>
+                    <td><input type="radio" name="2" value="3" > </td>
+                    <td><input type="radio" name="2" value="2" > </td>
+                    <td><input type="radio" name="2" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ability to clear doubts in classroom and outside</td>
+                    <td><input type="radio" name="3" value="5" > </td>
+                    <td><input type="radio" name="3" value="4" > </td>
+                    <td><input type="radio" name="3" value="3" > </td>
+                    <td><input type="radio" name="3" value="2" > </td>
+                    <td><input type="radio" name="3" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ability to conclude concepts with example</td>
+                    <td><input type="radio" name="4" value="5" > </td>
+                    <td><input type="radio" name="4" value="4" > </td>
+                    <td><input type="radio" name="4" value="3" > </td>
+                    <td><input type="radio" name="4" value="2" > </td>
+                    <td><input type="radio" name="4" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Communication skills and clearity</td>
+                    <td><input type="radio" name="5" value="5" > </td>
+                    <td><input type="radio" name="5" value="4" > </td>
+                    <td><input type="radio" name="5" value="3" > </td>
+                    <td><input type="radio" name="5" value="2" > </td>
+                    <td><input type="radio" name="5" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Punctuality and regularity in class</td>
+                    <td><input type="radio" name="6" value="5" > </td>
+                    <td><input type="radio" name="6" value="4" > </td>
+                    <td><input type="radio" name="6" value="3" > </td>
+                    <td><input type="radio" name="6" value="2" > </td>
+                    <td><input type="radio" name="6" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Interaction and discussion with students</td>
+                    <td><input type="radio" name="7" value="5" > </td>
+                    <td><input type="radio" name="7" value="4" > </td>
+                    <td><input type="radio" name="7" value="3" > </td>
+                    <td><input type="radio" name="7" value="2" > </td>
+                    <td><input type="radio" name="7" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Attitude towards students</td>
+                    <td><input type="radio" name="8" value="5" > </td>
+                    <td><input type="radio" name="8" value="4" > </td>
+                    <td><input type="radio" name="8" value="3" > </td>
+                    <td><input type="radio" name="8" value="2" > </td>
+                    <td><input type="radio" name="8" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Monitoring students and creating interest in students</td>
+                    <td><input type="radio" name="9" value="5" > </td>
+                    <td><input type="radio" name="9" value="4" > </td>
+                    <td><input type="radio" name="9" value="3" > </td>
+                    <td><input type="radio" name="9" value="2" > </td>
+                    <td><input type="radio" name="9" value="1" > </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Timely evaluation of internal assessment</td>
+                    <td><input type="radio" name="10" value="5" > </td>
+                    <td><input type="radio" name="10" value="4" > </td>
+                    <td><input type="radio" name="10" value="3" > </td>
+                    <td><input type="radio" name="10" value="2" > </td>
+                    <td><input type="radio" name="10" value="1" > </td>
+                </tr>
+              </table>
+            
+              <div class="row" style="padding:20px ; padding-left: 150px; border-bottom:2px solid black;" >
+                  <h5 style="text-align: center; padding-left: 100px;" >Reviews amd comments for Overall development</h5>
+                  <textarea rows="5" cols="100" name="comments" ></textarea>
+              </div>
+              <div class="row" style="padding:5px;padding-left: 400px;">
+                <button type="submit">Submit feedback</button>
+            </div>
+         </form>
+       </div>
+  </body>
+  </html>
+       
